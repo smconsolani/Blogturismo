@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Turismo City</title>
+       <link rel="shortcut icon" href="../naventradafinal/vuelo.png" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../entradatafidelvalle/style.css">
+    <link rel="stylesheet" href="../footer/stylefooternuevo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- inicio navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg navcol fixed-top navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="../index.html">
+            <img src="../naventradafinal/vuelo.png" alt="" width="40" height="35" class="d-inline-block align-text-top">
+            Turismo City
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white"  href="../formlogin/index.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../sobre-nosotros/sobrenosotros.html">Acerca de nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="../contacto/contact.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <div><a class="btn btn-warning text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Suscribirse</a></div>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+<div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog " >
+  <div class="modal-content" >
+    <div class="modal-header" >
+      <h5 class="modal-title" id="exampleModalLabel">Formulario de suscripcion</h5>
+      
+      
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" >
+        <form class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="Nameid" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="Nameid" required minlength="6" maxlength="20">
+                <div class="invalid-feedback">
+                  Este campo es obligatorio.
+                </div>
+                <!-- <div class="valid-feedback">
+                  Ok.
+                </div> -->
+
+                <label for="FechadeNac" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" id="FechadeNac" required>
+                <!-- <div class="invalid-feedback">
+                  Debes ser mayor de 18 años.
+                </div>
+                <div class="valid-feedback">
+                  Ok.
+                </div> -->
+                <label for="Email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" required>
+            <div class="invalid-feedback">
+              Introduzca una dirección de correo electrónico válida.
+            </div>
+            <!-- <div class="valid-feedback">
+              Ok.
+            </div> -->
+            <div class="mb-3">
+               <label for="Pass" class="form-label">Contraseña</label>
+               <input type="password" class="form-control" id="Pass" required minlength="4" maxlength="12">
+            </div>
+            <div class="invalid-feedback">
+              Su contraseña debe tener entre 4 y 12 caracteres.
+            </div>
+            <!-- <div class="valid-feedback">
+              Ok.
+            </div> -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recibir notificaciones por email</label>
+              </div>
+              <div class="modal-footer">  
+                <button type="submit" class="btn btn-primary" >Suscribirme</button>
+              </div>
+          </form>
+    </div>
+  
+  </div>
+</div>
+</div>
+  
+
+<!-- SCRIPTS -->
+<script>
+// Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+(function () {
+'use strict'
+
+// Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+var forms = document.querySelectorAll('.needs-validation')
+
+// Bucle sobre ellos y evitar el envío
+Array.prototype.slice.call(forms)
+.forEach(function (form) {
+  form.addEventListener('submit', function (event) {
+    if (!form.checkValidity()) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+
+    form.classList.add('was-validated')
+  }, false)
+})
+})()
+</script>
+
+  </header>
+  <!-- inicio seccion tafi del valle -->
+<main class="text-white">
+<!-- TITULO PAGINA ENTRADA  -->
+    <div class="titulo-entrada text-center">
+        <h1 class="fw-bold">Tafi del Valle - Tucuman</h1>
+    </div>
+
+
+    <!-- VIDEO PRINCIPAL  -->
+    <div class="container my-4 p-0">
+        <iframe  width="100%" height="500" src="https://www.youtube.com/embed/foDJ7k0-N6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- TEXTO EXPLICATIVO -->
+    <div class="container my-4 d-block text-start">
+        
+      <div class="row">
+        
+      <h3 class="text-center mb-4"> Tafi del Valle: Un destino que enamora</h3>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <p> 
+            Uno de los íconos del memorable circuito de los Valles Calchaquíes. Mucha naturaleza, aire puro, tradiciones, cultura y una población predispuesta a dar su afecto en todo momento.</p>
+            
+            <p> Llegar a Tafí del Valle es percibir una atmósfera sanadora, una energía positiva en cada rincón. Es un verdadero paraíso situado en el centro oeste de la Provincia de Tucumán. Además, su ubicación geográfica, a 2 mil metros de altura, le permite tener un clima fresco y apacible durante todo el año.</p>
+            <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/07/a3/f7/9c.jpg"  width="100%"  alt="">
+              
+            
+            <p> Una vez en el pueblo, lo ideal es instalarse en el hospedaje, dejar las cosas y salir a caminar. O a dar un paseo a caballo para sentir la esencia del lugar y contemplar el bello paisaje que lo rodea.</p>
+            
+            
+            <p>Todo está bien decorado en Tafí. Sus calles, comercios, restaurantes, la arquitectura, todo tiene un diseño pleno de encanto. Por eso, es un sitio que invita al descanso y al disfrute permanente. </p>
+              
+            
+            <p> Al pie del pueblo se destaca la Reserva Provincial La Angostura junto a su dique homónimo. Este punto es uno de los más bellos paisajísticamente hablando y lugar de referencia para realizar actividades náuticas, como kayak y kitesurf, entre otras.</p>
+               
+            <img src="https://colon.gov.ar/wp-content/uploads/2022/01/los-pueblos-originarios-tendran-un-lugar-en-la-artesania-31-01-2022.jpg"  width="100%" alt="">
+            <p> En Tafí también es muy importante el trabajo de artesanías. Desde esta localidad, hasta su vecina Amaicha del Valle, se lleva a adelante la Ruta de los Artesanos, integrada por diferentes talleres y productores de valiosas piezas. </p>
+              
+            
+            <p> Y no se puede obviar la que, tal vez, sea la principal delicia tafinista: el queso. La calidad de sus productos hace que aquí se realice, durante el mes de febrero, la Fiesta Nacional del Queso.</p>
+            
+            <img src="https://www.tucumanturismo.gob.ar/carga/image/g_gal_667767627.jpg"  width="100%" alt="">
+            <p>
+              El departamento de Tafí del Valle es uno de los más grandes de la provincia. En él se reúnen una multiplicidad de experiencias turísticas que enseñan la historia del pueblo y relajan el cuerpo y el alma para un verdadero descanso. Su geografía combina dos paisajes totalmente distintos: la selva y el valle árido.
+              El viaje a este destino implica una inmersión en las Yungas tucumanas que atraviesa el trazado de la ruta provincial 307. Verdes intensos a ambos lados del camino, árboles de todos los tamaños, arbustos y el Río Los Sosa, nos introducen a la reserva natural que custodia el camino. Como parte del recorrido se puede conocer el mirador “El Indio” que ofrece una vista panorámica destacada por la escultura de  6 metros de alto, situada en una base de 10 metros más, realizada por Enrique Prat Gay en homenaje a los mensajeros del imperio Inca.
+            </p>
+       
+            <img src="https://mapio.net/images-p/17861584.jpg"  width="100%"  alt="">
+            
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+          <strong class="h4"> Puntos destacados para visitar</strong>
+<p> En Tafí del Valle el turista encontrará muchísimas opciones a la hora de programar su visita: caminar o cabalgar entre sus cerros, practicar kayak o canotaje en el dique La Angostura, hacer mountain bike por sus senderos de tierra, conocer sus productos artesanales, degustar sus comidas típicas o simplemente recorrer sus calles empapadas de historia y tradición.
+Algunos lugares que no pueden dejar de ser visitados son:</p>
+<ul>
+    <li>
+       <strong> Museo y Capilla Jesuítica de La Banda:</strong> en este lugar, que se conserva desde 1718 se pueden visitar restos arqueológicos que datan de la época de la conquista española.
+    </li>
+    <li>
+       <strong>La Quebradita:</strong>  un atractivo tramo de 10 kilómetros ideal para caminatas, picnics o cabalgatas, con un pequeño morro en donde se ubica un Cristo Redentor con dominio de todo el valle; 
+    </li>
+    <li>
+      
+       <strong> La vuelta al valle:</strong> un paseo por toda la extensión de la Ruta Provincial Nº 325 y un tramo de la Ruta Provincial Nº 307, en donde se recorre el cerro El Pelao y las laderas de los cerros  Muñoz, Ñuñorco y Mala Mala con hermosos faldeos, en su mayoría con asentamientos precolombinos.
+    </li>
+    <li>
+       <strong>Cascada Los Alisos:</strong>  situada en el centro del cerro Muñoz. Este magnífico chorro de agua, espera  a los turistas que luego de 3 horas de caminata, van a enamorarse de la naturaleza.  Es recomendable ir con la compañía de un guía local para evitar cualquier inconveniente.
+    </li>
+    <li>
+      <strong> Museo Arqueológico a Cielo Abierto Los Menhires:</strong>  es la posibilidad de aprender y contemplar estos monumentos realizados por los primeros habitantes del Valle Calchaquí.
+      <img src="https://www.tucumanturismo.gob.ar/carga/image/taf01.jpg"  width="100%" alt="">
+    </li>
+    <li>
+     <strong> Ruta del Artesano:</strong>   Tafí del Valle irradia una tradición de artesanías que deja su huella alrededor de todo el valle. El turista se encontrará con talleres de artesanos de la zona que ofrecen sus productos realizados en lana, cuero, piedra, cerámica, etc. 
+    </li>
+</ul>
+
+
+          <strong class="h4">Nuestros platos característicos</strong>
+          <ul>
+              
+              
+            <li> 
+                <strong>Humita:</strong> Hasta tiene fiesta propia en San Pedro de Colalao: la humita es un plato regional imperdible, que se realiza con choclo, zapallo y queso. Es una preparación espesa y suave, de color amarillo, que se puede comer al plato o en chala, suave o picante.
+            </li>
+            <img src="https://www.tucumanturismo.gob.ar/carga/image//1484666974%20-%20Humita%20en%20olla%20recortada%20y%20reducida.jpg"  width="100%" alt="">
+            <li> 
+                <strong>Locro:</strong>Ideal para los días más frescos. Es una preparación espesa que lleva maíz amarillo molido, carne o charqui, patitas y cuero de cerdo, panceta, poroto seco y zapallo. Por lo general, se lo    acompaña con una salsita picante de ajíes y cebolla que realza su sabor regional. Una variedad de esta comida es el guascha locro, hecho en base a maíz cortado a cuchillo, zapallo y verduras y coloreado con pimentón.
+            </li>
+            <li>
+                <strong>Tamal:</strong>Vayas donde vayas, uno de los platos tucumanos por excelencia es el tamal. Se prepara con harina de maíz y anco (especie de zapallo) y se rellena con carne  vacuna, charqui (carne seca) o cerdo, pasas, huevos y condimentos. El tamal se sirve envuelto en chalas de maíz secas atadas con hilos, lo que lo hace más tentador aún.
+            </li>
+            
+            <li> 
+                <strong>Quesos y quesillos:</strong>Con leche de cabra, de vaca y hasta de oveja, los quesos tucumanos son otro deleite para el paladar. Algunas de las estancias queseras más populares de la provincia se encuentran en  Tafí del Valle y en San Pedro, pero se pueden conseguir en el centro y son ideales para llevar de regalo como un sabor típicamente regional. No sólo se los come en picadas sino también  como postre, acompañados de jaleas, miel o arrope.
+                Otro de los clásicos es el quesillo, un tipo de queso fresco que se prepara con leche de vaca o de cabra, se deja cuajar y una vez escurrido el suero, se cuelga en sogas de alambre que le  dan su forma alargada.
+            </li>
+              <li> 
+                  <strong>Alfeñique:</strong>El alfeñique es un tipo de caramelo duro, de forma ronda y retorcida, tradicional de la provincia. Son preparados con la melaza o miel de caña de azúcar y suelen ser los dulces más elegidos por los turistas debido a su particular sabor y a su bajo costo.
+              </li>
+              <li> 
+                  <strong>Alfajores de miel de caña:</strong>Delicia tucumana ideal para llevar como recuerdo a familiares o amigos. Este tipo de alfajor, propio de la región norte del país, deleita a todos aquellos que lo prueban con su característico sabor a miel de caña. 
+              </li>
+              
+          </ul>
+          <strong> Fiestas populares</strong>
+          <p> Dos de los eventos más importantes que ofrece Tafí del Valle son la Fiesta Nacional del Queso llevada a cabo en el mes de Febrero en honor a este producto reconocido como símbolo de la localidad. Por otro lado, la representación de la Vida y Pasión de Dios Hombre durante Semana Santa es otro imperdible de esta localidad.</p>
+          <strong>Turismo de estancias</strong>
+          <p>Se trata de una experiencia de turismo distinta que permite disfrutar de la cultura de estancias típicas del valle. Estas estancias cuentan la historia de familias que habitaron la zona desde el s. XVIII y que conservan los espacios y costumbres de esas épocas. Quedarse en alguna de ellas es entrar en contacto con la gastronomía y con las historias vivas de los personajes que pasaron por ellas.</p>
+        </div>
+</div>
+    </div>
+
+    <!-- FORMULARIO DE COMENTARIOS -->
+    <div class="container my-4" >    
+        <div class="row">
+
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5" >
+              <form class="needs-validation" novalidate>
+                <h4 class="mb-4">¿Te gustó el post? Tu comentario es bienvenido...</h4>
+                <div class="mb-3">
+                  <label for="exampleInputNombre" class="form-label">Nombre y Apellido</label>
+                  <input type="text" class="form-control" placeholder="tunombre" maxlength="30" minlength="4" id="exampleInputNombre" required>
+                </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" placeholder="tucorreo@Ejemplo.com" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" re rows="5" maxlength="400" minlength="5" placeholder="Dejanos aqui tu comentario.." required></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary"><a class="text-white text-decoration-none" href="#">
+                Enviar</a></button>
+            </form>
+          </div>
+
+          <!-- SCRIPTS -->
+<script>
+  // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+  (function () {
+    'use strict'
+  
+    // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+    var forms = document.querySelectorAll('.needs-validation')
+  
+    // Bucle sobre ellos y evitar el envío
+    Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+  
+          form.classList.add('was-validated')
+        }, false)
+      })
+  })()
+  </script>
+  
+<!-- COMENTARIOS SOBRE EL FORMULARIO -->
+
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  "> 
+              
+            <div class="row my-1">
+                <div class="col-1 p-0 me-3">
+                <img src="../entradatafidelvalle/nacho.png" width="64" alt="">
+              </div> 
+                              
+                <div class="col-6 ms-2">
+                <p > <strong>Nacho</strong> </p> 
+                <p> <em> <small>Hace 2 horas</small> </em> </p>             
+                </div>
+            </div>
+            <div class="row">
+              <p class="col-12 p-0 mt-2">Bello lugar, linda vista para donde se nos ocurra mirar. Ideal para fotografías. La caminata no exige estado físico. </p>
+            </div>
+
+            <hr>
+            <div class="row my-1">
+              <div class="col-1 p-0 me-3">
+              <img src="../entradatafidelvalle/mariluz.png" width="64" alt="">
+            </div> 
+                            
+              <div class="col-6 ms-2">
+              <p > <strong>Maria luz</strong> </p> 
+              <p><em><small>Hace 3 dias</small></em> </p>             
+              </div>
+          </div>
+          <div class="row">
+            <p class="col-12 p-0 mt-2">En el camino hacia tafi del valle, hermoso lugar que debes visitar, se encuentra el popularmente llamado "El Indio", donde podras sacarte muy buenas pic y recorrer su tolderia de artesanias </p>
+          </div>
+
+          <hr>
+          <div class="row my-1">
+            <div class="col-1 p-0 me-3">
+            <img src="../entradatafidelvalle/juanroman.png" width="64" alt="">
+          </div> 
+                          
+            <div class="col-6 ms-2">
+            <p > <strong>Juan Roman</strong> </p> 
+            <p><em><small>11 de Noviembre</small></em> </p>             
+            </div>
+        </div>
+        <div class="row">
+          <p class="col-12 p-0 mt-2">Un hermoso,lugar para el esparcimiento,paz y un rincón de pesca inigualable.Con eccesos de rutas seguras y con todos los servicios para los visitantes,a poca distancia de las ciudades de Tucuman,Santiago del Estero,y Catamarca. </p>
+        </div>
+
+        <hr>
+        <div class="row my-3">
+          <div class="col-1 p-0 me-3">
+          <img src="../entradatafidelvalle/anadiaz.png" width="64" alt="">
+        </div> 
+                        
+          <div class="col-6 ms-2">
+          <p > <strong>Ana Diaz</strong> </p> 
+          <p><em><small>10 de Noviembre</small></em> </p>             
+          </div>
+      </div>
+      <div class="row">
+        <p class="col-12 p-0 mt-2">Es increíble, único, con paisajes bellísimos, una vista al lago, caballos y montañas, de cuento. </p>
+      </div>
+
+      <hr>
+      <div class="row my-3">
+        <div class="col-1 p-0 me-3">
+        <img src="../entradatafidelvalle/luiscardozo.png" width="64" alt="">
+      </div> 
+                      
+        <div class="col-6 ms-2">
+        <p > <strong>Luis Cardozo</strong> </p> 
+        <p><em><small> Hace 1 mes</small></em></p>             
+        </div>
+    </div>
+    <div class="row">
+      <p class="col-12 p-0 mt-2">Tafí del Valle es el centro turístico de Tucumán por excelencia, ya que combina montañas, ríos y un clima ideal. </p>
+    </div>
+
+    <hr>
+                
+              </div>
+            </div>
+        </div>
+    </div>
+  </main>
+  <!-- Footer -->
+<footer>
+        <div class="container-fluid">
+  
+          <div class="row p-4 pb-2 bg-dark text-white">
+              <div class="col-xs-12 col-md-3 col-lg-3 d-flex align-items-end">   
+                  <img class="imgfooter" src="../naventradafinal/vuelo.png" alt="">
+              </div>
+          
+              <div class="col-xs-12 col-md-3 col-lg-3">   
+                  <p class="h4 mb-4">Link a redes</p>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/facebook.png" alt="" style="width: 1.3rem; height: 1.3rem;"> Facebook</a>
+                  </div>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/instagram (1).png" alt="" style="width: 1.3rem; height: 1.3rem;"> instagram</a>
+                  </div>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/twitter.png" alt="" style="width: 1.3rem; height: 1.3rem;"> Twitter</a>
+                  </div>
+                  
+              </div>
+              <div class="col-xs-12 col-md-3 col-lg-3">   
+                  <p class="h4 mb-4">Info Varias</p>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/terms-and-conditions.png" alt="" style="width: 1.5rem; height: 1.5rem;"> Terminos y Condiciones</a>
+                  </div>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/insurance.png" alt="" style="width: 2rem; height: 2rem;"> Politica de Privacidad</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 pt-4">
+                  <p class="text-white text-center">Gracias por Visitarnos</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> 
+</body>
+</html>

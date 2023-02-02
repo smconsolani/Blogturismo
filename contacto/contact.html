@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo City</title>
+    <link rel="shortcut icon" href="../naventradafinal/vuelo.png" type="image/x-icon">
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="../stylee.css">
+    <link rel="stylesheet" href="../footer/stylefooternuevo.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- font-Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- inicio navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navcol navbar-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand text-light" href="../index.html">
+              <img src="../naventradafinal/vuelo.png" alt="" width="40" height="35" class="d-inline-block align-text-top">
+              Turismo City
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="text-light nav-link"  href="../formlogin/index.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../sobre-nosotros/sobrenosotros.html">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="../contacto/contact.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <div><a class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Suscribirse</a></div>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+  
+    <!-- Modal -->
+  <div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" >
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Suscribete al newsletter</h5>
+        
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" >
+          <form class="needs-validation" novalidate>
+              <div class="mb-3">
+                  <label for="Nameid" class="form-label">Nombre y Apellido</label>
+                  <input type="text" class="form-control" id="Nameid" required minlength="6" maxlength="20">
+                  <div class="invalid-feedback">
+                    Este campo es obligatorio.
+                  </div>
+                  <!-- <div class="valid-feedback">
+                    Ok.
+                  </div> -->
+  
+                  <label for="FechadeNac" class="form-label">Fecha de Nacimiento</label>
+                  <input type="date" class="form-control" id="FechadeNac" required>
+                  <!-- <div class="invalid-feedback">
+                    Debes ser mayor de 18 años.
+                  </div>
+                  <div class="valid-feedback">
+                    Ok.
+                  </div> -->
+                  <label for="Email" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" required>
+              <div class="invalid-feedback">
+                Introduzca una dirección de correo electrónico válida.
+              </div>
+              <!-- <div class="valid-feedback">
+                Ok.
+              </div> -->
+              <div class="mb-3">
+                 <label for="Pass" class="form-label">Contraseña</label>
+                 <input type="password" class="form-control" id="Pass" required minlength="4" maxlength="12">
+              </div>
+              <div class="invalid-feedback">
+                Su contraseña debe tener entre 4 y 12 caracteres.
+              </div>
+              <!-- <div class="valid-feedback">
+                Ok.
+              </div> -->
+              <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Recibir notificaciones por email</label>
+                </div>
+                <div class="modal-footer">  
+                  <button type="submit" class="btn btn-primary" >Suscribirme</button>
+                </div>
+            </form>
+      </div>
+    
+    </div>
+  </div>
+  </div>
+    
+  
+  <!-- SCRIPTS -->
+  <script>
+  // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+  (function () {
+  'use strict'
+  
+  // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+  var forms = document.querySelectorAll('.needs-validation')
+  
+  // Bucle sobre ellos y evitar el envío
+  Array.prototype.slice.call(forms)
+  .forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+  
+      form.classList.add('was-validated')
+    }, false)
+  })
+  })()
+  </script>
+  
+  </header>
+    <!-- INICIO DE LA SECCION  CONTACTO -->
+    <section class="contact">
+        <div class="container pst">
+            <div class="row  text-light">
+              
+                <div class="contact__2  my-3 p-2 col text-center float-right">
+                    <h5>CONTACTANOS</h5>
+                    <hr>
+                    <table class="container text-center">
+                        <tr>
+                            <th>CALL CENTER</th>
+                        </tr>
+                        <tr>
+                            <td>0800-555-1234</td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <h5>ESCRIBENOS!</h5>
+                    <div class=" p-1 mb-3">
+                        <form  class="was-validated">
+                        <input type="name" class="form-control" minlength="3" maxlength="25" id="exampleFormControlInput1"
+                            placeholder="NOMBRE COMPLETO" required>
+                    </div>
+                    <div class="was-validated p-1 mb-3">
+                        <input type="email" class="form-control " id="exampleFormControlInput1"
+                            placeholder="EMAIL" required>
+                    </div>
+                    <div class="was-validated">
+                        <textarea class="cuadro form-control" minlength=100 maxlength="300" id="exampleFormControlTextarea1"
+                            placeholder="DEJANOS TU CONSULTA" required rows="4"></textarea>
+                            <div class="invalid-feedback text-light">Escribe un min. de 100 caracteres a un max. 300 caracteres</div>
+                        </form>
+                        <a class="btn d-grid btn-success col-6 mx-auto mt-3 " href="" role="button">ENVIAR</a>
+                        <hr>
+                        <a id="reservas" href="../Pagina 404/cta.html">RESERVAS AQUI</a>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-lg-6  my-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3287.9268107879298!2d-58.7043033718406!3d-34.50473971346836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca2cfe701193d%3A0x697f14b0304c88c!2sTurismo%20City!5e0!3m2!1ses-419!2sar!4v1668265238282!5m2!1ses-419!2sar"
+                        width="100%" height="550" style="border:2px solid gray; border-radius:20px;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+  
+          <div class="row p-4 pb-2 bg-dark text-white">
+              <div class="col-xs-12 col-md-3 col-lg-3 d-flex align-items-end">   
+                  <img class="imgfooter" src="../naventradafinal/vuelo.png" alt="">
+              </div>
+          
+              <div class="col-xs-12 col-md-3 col-lg-3">   
+                  <p class="h4 mb-4">Link a redes</p>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/facebook.png" alt="" style="width: 1.3rem; height: 1.3rem;"> Facebook</a>
+                  </div>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/instagram (1).png" alt="" style="width: 1.3rem; height: 1.3rem;"> instagram</a>
+                  </div>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/twitter.png" alt="" style="width: 1.3rem; height: 1.3rem;"> Twitter</a>
+                  </div>
+                  
+              </div>
+              <div class="col-xs-12 col-md-3 col-lg-3">   
+                  <p class="h4 mb-4">Info Varias</p>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/terms-and-conditions.png" alt="" style="width: 1.5rem; height: 1.5rem;"> Terminos y Condiciones</a>
+                  </div>
+                  <div class="mb-3">
+                      <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/insurance.png" alt="" style="width: 2rem; height: 2rem;"> Politica de Privacidad</a>
+                  </div>
+              </div>
+              <div class="col-xs-12 pt-4">
+                  <p class="text-white text-center">Gracias por Visitarnos</p>
+              </div>
+          </div>
+      </div>
+  </footer>   
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

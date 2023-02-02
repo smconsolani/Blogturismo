@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylee.css">
+    <link rel="stylesheet" href="../footer/stylefooternuevo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../Bariloche/style.css">
+    <title>Turismo City</title>
+    <link rel="shortcut icon" href="../naventradafinal/vuelo.png" type="image/x-icon">
+    <!-- font-Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- inicio navbar -->
+<header>
+        <nav class="navbar navbar-expand-lg fixed-top navcol navbar-dark">
+          <div class="container-fluid">
+              <a class="navbar-brand text-light" href="../index.html">
+                  <img src="../naventradafinal/vuelo.png" alt="" width="40" height="35" class="d-inline-block align-text-top">
+                  Turismo City
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="text-light nav-link"  href="../formlogin/index.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="../sobre-nosotros/sobrenosotros.html">Acerca de nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="../contacto/contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <div><a class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Suscribirse</a></div>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+      
+        <!-- Modal -->
+      <div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Suscribete al newsletter</h5>
+            
+            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" >
+              <form class="needs-validation" novalidate>
+                  <div class="mb-3">
+                      <label for="Nameid" class="form-label">Nombre y Apellido</label>
+                      <input type="text" class="form-control" id="Nameid" required minlength="6" maxlength="20">
+                      <div class="invalid-feedback">
+                        Este campo es obligatorio.
+                      </div>
+                      <!-- <div class="valid-feedback">
+                        Ok.
+                      </div> -->
+      
+                      <label for="FechadeNac" class="form-label">Fecha de Nacimiento</label>
+                      <input type="date" class="form-control" id="FechadeNac" required>
+                      <!-- <div class="invalid-feedback">
+                        Debes ser mayor de 18 años.
+                      </div>
+                      <div class="valid-feedback">
+                        Ok.
+                      </div> -->
+                      <label for="Email" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" required>
+                  <div class="invalid-feedback">
+                    Introduzca una dirección de correo electrónico válida.
+                  </div>
+                  <!-- <div class="valid-feedback">
+                    Ok.
+                  </div> -->
+                  <div class="mb-3">
+                     <label for="Pass" class="form-label">Contraseña</label>
+                     <input type="password" class="form-control" id="Pass" required minlength="4" maxlength="12">
+                  </div>
+                  <div class="invalid-feedback">
+                    Su contraseña debe tener entre 4 y 12 caracteres.
+                  </div>
+                  <!-- <div class="valid-feedback">
+                    Ok.
+                  </div> -->
+                  <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Recibir notificaciones por email</label>
+                    </div>
+                    <div class="modal-footer">  
+                      <button type="submit" class="btn btn-primary" >Suscribirme</button>
+                    </div>
+                </form>
+          </div>
+        
+        </div>
+      </div>
+      </div>
+        
+      
+      <!-- SCRIPTS -->
+      <script>
+      // Ejemplo de JavaScript inicial para deshabilitar el envío de formularios si hay campos no válidos
+      (function () {
+      'use strict'
+      
+      // Obtener todos los formularios a los que queremos aplicar estilos de validación de Bootstrap personalizados
+      var forms = document.querySelectorAll('.needs-validation')
+      
+      // Bucle sobre ellos y evitar el envío
+      Array.prototype.slice.call(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+      
+          form.classList.add('was-validated')
+        }, false)
+      })
+      })()
+      </script>
+      
+  </header>    
+    <!-- inicio seccion bariloche -->
+<section>
+    <div class="container">
+        <h1 id="title-brc" class="text-center margensup margeninf fw-bold text-white">Visitá San Carlos de Bariloche</h1><hr>
+        <div class="card mb-3">
+            <img src="../Bariloche/93.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-center fst-italic"><small class="text-muted">San Carlos de Bariloche - Cerro Llao Llao</small></p>
+                <h4 class="card-title text-center text-primary">CERRO LLAO LLAO</h4>
+                <p class="card-text">Una caminata imperdible en Bariloche es, sin duda, la visita al Mirador del Cerro Llao Llao. Tendrás las mejores vistas panorámicas del Lago Moreno y el Lago Nahuel Huapi, con los picos nevados de los cerros de fondo. Es un hermoso sendero de bosque que inicia en la entrada del Parque Municipal, se encuentra bien marcado y bien mantenido y no presenta dificultad, salvo por al ascenso al Mirador que tiene algo de pendiente.</p>
+            </div>
+        </div>
+        <div class="card mb-3">
+            <img src="../Bariloche/header3.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text text-center fst-italic"><small class="text-muted">San Carlos de Bariloche - Circuito Villa Tacul</small></p>
+                <h4 class="card-title text-center text-primary">CIRCUITO DE VILLA TUCUL</h4>
+                <p class="card-text">Uno de los recorridos imperdibles de tu visita a Bariloche! Este completísimo circuito por Villa Tacul inicia en Villa Llao Llao y sigue el sendero del Bosque de Arrayanes, pasa por el Mirador del Lago Moreno y se dirige a Villa Tacul, visitando sus playas y el Mirador Tacul, finalmente sube al Cerro Llao Llao para tener las más espectaculares vistas de la zona. </p>
+                <p class="card-text">Es una gran opción para visitar en familia o grupos de amigos, los senderos se encuentran bien señalizados y mantenidos, haciendo que recorrerlos sea sencillo y en compañía de la naturaleza y los bellísimos paisajes barilochenses.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="fotos-brc">
+        <div class="text-center py-4">
+            <h2 id="title-brc" class="text-center fw-bold text-white">#Descubriendo Bariloche</h2>
+            <p class="p-2 text-white font-monospace">¿Buscas las mejores rutas de senderismo en Bariloche? Si te estás preparando para hacer senderismo, ciclismo, correr o explorar otras actividades al aire libre, AllTrails tiene 175 recorridos panorámicos alrededor de Bariloche. Disfruta de mapas de rutas cuidadosamente seleccionadas, junto con reseñas y fotos de apasionados de la naturaleza como tú.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-xl-4">
+                <img src="../Bariloche/cerro campanario.webp" alt="">
+            </div>
+            <div class="col-xs-12 col-md-6 col-xl-4">
+                <img src="../Bariloche/cerro llaollao.webp" alt="">
+            </div>
+            <div class="col-xs-12 col-md-6 col-xl-4">
+                <img src="../Bariloche/refugio frey via villa cerro catedral.webp" alt="">
+            </div>
+            <div class="col-xs-12 col-md-6 col-xl-4">
+                <img src="../Bariloche/sendero cerro lopez.webp" alt="">
+            </div>
+            <div class="col-xs-12 col-md-6 col-xl-4">
+                <img src="../Bariloche/sendero de los arrayanes.webp" alt="">
+            </div>
+            <div class="col-xs-12 col-md-6 col-xl-4">
+                <img src="../Bariloche/sendero villa tacul.webp" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- inicio footer -->
+<footer>
+    <div class="container-fluid mt-5">
+
+      <div class="row p-2 bg-dark text-white">
+          <div class="col-xs-12 col-md-3 col-lg-3 d-flex align-items-end">   
+              <img class="imgfooter" src="../naventradafinal/vuelo.png" alt="">
+          </div>
+      
+          <div class="col-xs-12 col-md-3 col-lg-3">   
+              <p class="h4 mb-2">Link a redes</p>
+              <div class="mb-3">
+                  <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/facebook.png" alt="" style="width: 1.3rem; height: 1.3rem;"> Facebook</a>
+              </div>
+              <div class="mb-3">
+                  <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/instagram (1).png" alt="" style="width: 1.3rem; height: 1.3rem;"> instagram</a>
+              </div>
+              <div class="mb-3">
+                  <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/twitter.png" alt="" style="width: 1.3rem; height: 1.3rem;"> Twitter</a>
+              </div>
+              
+          </div>
+          <div class="col-xs-12 col-md-3 col-lg-3">   
+              <p class="h4 mb-2">Info Varias</p>
+              <div class="mb-3">
+                  <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/terms-and-conditions.png" alt="" style="width: 1.5rem; height: 1.5rem;"> Terminos y Condiciones</a>
+              </div>
+              <div class="mb-3">
+                  <a class="text-secondary text-decoration-none" href="../Pagina 404/cta.html"><img class="" src="../footer/img/insurance.png" alt="" style="width: 2rem; height: 2rem;"> Politica de Privacidad</a>
+              </div>
+          </div>
+          <div class="col-xs-12 pt-1">
+              <p class="text-white text-center">Gracias por  Visitarnos</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 17%, rgba(37,74,153,0.9051995798319328) 86%, rgba(0,212,255,1) 100%);
+}
+
+.navcol{
+    background: rgb(45,158,147);
+    background: radial-gradient(circle, rgba(45,158,147,0.7343312324929971) 0%, rgba(31,120,61,1) 100%);
+}
+.lugar{
+    margin-top: 75px;
+    margin-bottom: 15px;
+}

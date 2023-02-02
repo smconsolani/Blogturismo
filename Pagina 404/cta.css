@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background: #4b6cb7;
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+    background: linear-gradient(to right, #182848, #4b6cb7);
+}
+#nine{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    margin-top: 10rem;
+}
+#nine h1{
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url(./paisajes-de-yosemite-46208063.jpg) center no-repeat; -webkit-text-fill-color: transparent; -webkit-background-clip: text; background-clip: text;
+}
